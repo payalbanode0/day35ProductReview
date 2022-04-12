@@ -1,0 +1,16 @@
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\bin\Debug\net5.0\ProductReviewLinq.exe
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\bin\Debug\net5.0\ProductReviewLinq.deps.json
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\bin\Debug\net5.0\ProductReviewLinq.runtimeconfig.json
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\bin\Debug\net5.0\ProductReviewLinq.runtimeconfig.dev.json
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\bin\Debug\net5.0\ProductReviewLinq.dll
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\bin\Debug\net5.0\ProductReviewLinq.pdb
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\ProductReviewLinq.csproj.AssemblyReference.cache
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\ProductReviewLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\ProductReviewLinq.AssemblyInfoInputs.cache
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\ProductReviewLinq.AssemblyInfo.cs
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\ProductReviewLinq.csproj.CoreCompileInputs.cache
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\ProductReviewLinq.dll
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\refint\ProductReviewLinq.dll
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\ProductReviewLinq.pdb
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\ProductReviewLinq.genruntimeconfig.cache
+C:\Users\ASUS\Desktop\day35product\ProductReviewLinq\ProductReviewLinq\obj\Debug\net5.0\ref\ProductReviewLinq.dll
