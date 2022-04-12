@@ -55,7 +55,12 @@ namespace productReviewLinq
             //management.SkipTop_5_Records(listofpr);
 
             //UC 7
-            management.RetrieveProductId_RatingUsingSelect(listofpr);
+            //management.RetrieveProductId_RatingUsingSelect(listofpr);
+            
+            //UC 8
+            Console.WriteLine("LINQ to Data Table!");
+            LinqToDataTable ldt = new LinqToDataTable();
+            ldt.AddToTable();
 
         }
     }
