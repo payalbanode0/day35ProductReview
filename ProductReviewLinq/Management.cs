@@ -34,18 +34,28 @@ namespace productReviewLinq
         //    }
         //}
 
-        //UC 4
+        ////UC 4
         //public void RetrieveCount(List<ProductReview> review)
         //{
-        // var recordedData = review.GroupBy(x => x.ProductID).Select(x => new { ProductId = x.Key, Count = x.Count() });
-        //foreach (var list in recordedData)
+        //    var recordedData = review.GroupBy(x => x.ProductID).Select(x => new { ProductId = x.Key, Count = x.Count() });
+        //    foreach (var list in recordedData)
+        //    {
+        //        Console.WriteLine("Product Id : " + list.ProductId + ", Count : " + list.Count);
+        //    }
+        //}
+
+        ////UC 5
+
+        //public void RetrieveProductId_Rating(List<ProductReview> review)
         //{
-        //  Console.WriteLine("Product Id : " + list.ProductId + ", Count : " + list.Count);
-        //}
+        //    var recordedData = review.Select(i => new { i.ProductID, i.Review });
+        //    foreach(var list in recordedData)
+        //    {
+        //        Console.WriteLine("Product Id : " + list.ProductID + ", Review : " + list.Review);
+        //    }
         //}
 
-        //UC 5
-
+        //UC 6
         public void SkipTop_5_Records(List<ProductReview> review)
         {
             var recordedData = review.OrderByDescending(i => i.Rating).Skip(5);
