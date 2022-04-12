@@ -48,18 +48,18 @@ namespace productReviewLinq
 
         //public void RetrieveProductId_Rating(List<ProductReview> review)
         //{
-        //    var recordedData = (from ProductReview in review orderby ProductReview.Rating select ProductReview);
+        //    var recordedData = (from ProductReview in review  orderby ProductReview.Rating select ProductReview);
         //    foreach (var list in recordedData)
         //    {
         //        Console.WriteLine("Product Id : " + list.ProductID + ", Review : " + list.Review);
         //    }
         //}
 
-        ////UC 6
+        //UC 6
         //public void SkipTop_5_Records(List<ProductReview> review)
         //{
-        //    var recordedData = review.OrderByDescending(i => i.Rating).Skip(5);
-        //    foreach (var list in recordedData)
+        //    var recordedData = review.OrderByDescending(i=>i.Rating).Skip(5);
+        //    foreach(var list in recordedData)
         //    {
         //        Console.WriteLine("ProductID : " + list.ProductID + ", User ID : " + list.UserID + ", Rating :" + list.Rating + ", Review : " + list.Review + ", isLike : " + list.isLike);
 
@@ -74,6 +74,6 @@ namespace productReviewLinq
         //    {
         //        Console.WriteLine("Product Id : " + list.ProductID + ", Review : " + list.Review);
         //    }
-        
+        //}
     }
 }
