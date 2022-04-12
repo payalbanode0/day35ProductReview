@@ -46,14 +46,14 @@ namespace productReviewLinq
 
         ////UC 5
 
-        //public void RetrieveProductId_Rating(List<ProductReview> review)
-        //{
-        //    var recordedData = review.Select(i => new { i.ProductID, i.Review });
-        //    foreach(var list in recordedData)
-        //    {
-        //        Console.WriteLine("Product Id : " + list.ProductID + ", Review : " + list.Review);
-        //    }
-        //}
+        public void RetrieveProductId_Rating(List<ProductReview> review)
+        {
+            var recordedData = (from ProductReview in review orderby ProductReview.Rating select ProductReview);
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine("Product Id : " + list.ProductID + ", Review : " + list.Review);
+            }
+        }
 
         //UC 6
         public void SkipTop_5_Records(List<ProductReview> review)
@@ -63,6 +63,16 @@ namespace productReviewLinq
             {
                 Console.WriteLine("ProductID : " + list.ProductID + ", User ID : " + list.UserID + ", Rating :" + list.Rating + ", Review : " + list.Review + ", isLike : " + list.isLike);
 
+            }
+        }
+
+        //UC 7
+        public void RetrieveProductId_RatingUsingSelect(List<ProductReview> review)
+        {
+            var recordedData = review.Select(i => new { i.ProductID, i.Review });
+            foreach (var list in recordedData)
+            {
+                Console.WriteLine("Product Id : " + list.ProductID + ", Review : " + list.Review);
             }
         }
     }
