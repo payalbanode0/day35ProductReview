@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace ProductReviewLinq
+namespace productReviewLinq
 {
     internal class Program
     {
@@ -46,7 +46,10 @@ namespace ProductReviewLinq
             //management.SelectRecords(listofpr);
 
             //UC 4 
-            management.RetrieveCount(listofpr);
+            //management.RetrieveCount(listofpr);
+
+            //UC 5
+            management.RetrieveProductId_Rating(listofpr);
 
 
 

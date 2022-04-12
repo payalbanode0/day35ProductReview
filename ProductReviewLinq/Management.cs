@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 
-namespace ProductReviewLinq
+namespace productReviewLinq
 {
     internal class Management
     {
@@ -35,12 +35,24 @@ namespace ProductReviewLinq
         //}
 
         //UC 4
-        public void RetrieveCount(List<ProductReview> review)
+        //public void RetrieveCount(List<ProductReview> review)
+        //{
+        // var recordedData = review.GroupBy(x => x.ProductID).Select(x => new { ProductId = x.Key, Count = x.Count() });
+        //foreach (var list in recordedData)
+        //{
+        //  Console.WriteLine("Product Id : " + list.ProductId + ", Count : " + list.Count);
+        //}
+        //}
+
+        //UC 5
+
+        public void SkipTop_5_Records(List<ProductReview> review)
         {
-            var recordedData = review.GroupBy(x => x.ProductID).Select(x => new { ProductId = x.Key, Count = x.Count() });
+            var recordedData = review.OrderByDescending(i => i.Rating).Skip(5);
             foreach (var list in recordedData)
             {
-                Console.WriteLine("Product Id : " + list.ProductId + ", Count : " + list.Count);
+                Console.WriteLine("ProductID : " + list.ProductID + ", User ID : " + list.UserID + ", Rating :" + list.Rating + ", Review : " + list.Review + ", isLike : " + list.isLike);
+
             }
         }
     }
