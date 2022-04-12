@@ -63,8 +63,15 @@ namespace productReviewLinq
             //UC 9
             //ldt.AddToTable();
 
+            //UC 10
+            //ldt.AddToTable();
+
             //UC 11
+            //ldt.AddToTable();
+
+            //UC 12
             ldt.AddToTable();
+
         }
     }
 }
