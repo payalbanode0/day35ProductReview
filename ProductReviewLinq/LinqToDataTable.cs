@@ -38,24 +38,24 @@ namespace productReviewLinq
             dt.Rows.Add(15, "Kafe Strong", 5, "nice", 7, true);
             dt.Rows.Add(16, "Knock Out", 5, "Great", 9, true);
             dt.Rows.Add(17, "Kafe Lite", 5, "Worst", 2, false);
-            dt.Rows.Add(18, "Rum", 10, "Great", 10, true);
-            dt.Rows.Add(19, "Whiskey", 10, "Very Good", 10, true);
-            dt.Rows.Add(20, "Vodka", 10, "nice", 7, true);
-            dt.Rows.Add(21, "Brandi", 10, "Bad", 3, false);
+            dt.Rows.Add(18, "Rum", 6, "Great", 10, true);
+            dt.Rows.Add(19, "Whiskey", 6, "Very Good", 10, true);
+            dt.Rows.Add(20, "Vodka", 6, "nice", 7, true);
+            dt.Rows.Add(21, "Brandi", 6, "Bad", 3, false);
             dt.Rows.Add(22, "Champaine", 5, "Great", 10, true);
             dt.Rows.Add(23, "RedBull", 2, "nice", 9, true);
             dt.Rows.Add(24, "Gluco plus", 2, "Good", 8, true);
-            dt.Rows.Add(25, "Red Wine", 10, "Okay", 6, true);
+            dt.Rows.Add(25, "Red Wine", 6, "Okay", 6, true);
 
             //    DisplayProducts(dt);
             //Uc 9
             //Retrieve_ISLike(dt);
 
             //Uc 10
-            Retrieve_Avg_Prodructs(dt);
+            //Retrieve_Avg_Prodructs(dt);
 
             //UC 11
-            //NiceReview(dt);
+            NiceReview(dt);
         }
         public void DisplayProducts(DataTable dt)
         {
@@ -88,21 +88,7 @@ namespace productReviewLinq
         //UC 10
         public void Retrieve_Avg_Prodructs(DataTable dt)
         {
-            foreach (DataRow row in dt.Rows)
-            {
-                double avg1 = dt.Select().Where(p => Convert.ToInt32(p["ProductId"]) == 1).Select(c => Convert.ToDouble(c["Rating"])).Average();
-                double avg2 = dt.Select().Where(p => Convert.ToInt32(p["ProductId"]) == 2).Select(c => Convert.ToDouble(c["Rating"])).Average();
-                double avg3 = dt.Select().Where(p => Convert.ToInt32(p["ProductId"]) == 3).Select(c => Convert.ToDouble(c["Rating"])).Average();
-                double avg4 = dt.Select().Where(p => Convert.ToInt32(p["ProductId"]) == 4).Select(c => Convert.ToDouble(c["Rating"])).Average();
-                double avg5 = dt.Select().Where(p => Convert.ToInt32(p["ProductId"]) == 5).Select(c => Convert.ToDouble(c["Rating"])).Average();
-                double avg10 = dt.Select().Where(p => Convert.ToInt32(p["ProductId"]) == 10).Select(c => Convert.ToDouble(c["Rating"])).Average();
-                Print(avg1, avg2, avg3, avg4, avg5, avg10);
-                void Print(double avg1, double avg2, double avg3, double avg4, double avg5, double avg10)
-                {
-                    Console.WriteLine("Product Id : 1, Avg2 : " + avg1 + "\nProduct Id : 2, Avg : " + avg2 + "\nProduct Id : 3, Avg : " + avg3 + "\nProduct Id : 4, Avg : " + avg4 + "\nProduct Id : 1, Avg : " + avg5 + "\nProduct Id : 10, Avg : " + avg10);
-                }
-                break;
-            }
+
         }
         //UC 11
         public void NiceReview(DataTable dt)
