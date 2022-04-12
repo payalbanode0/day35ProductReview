@@ -29,7 +29,5 @@ namespace ProductReviewLinq
                 Console.WriteLine(product);
             }
         }
-    
-    
     }
 }
